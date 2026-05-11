@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Zero - Ecosistema Digital</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Open Sans"', 'sans-serif'],
+                        headers: ['"Poppins"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#1A2238',
+                            primary: '#438EBA',
+                            light: '#40AAEB'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        h1, h2, h3, h4, .font-headers { font-family: 'Poppins', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-gray-800 font-sans selection:bg-brand-light selection:text-white">
+
+    <header class="bg-white/95 backdrop-blur-sm shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <span class="font-headers font-bold text-2xl text-brand-dark uppercase tracking-tight">
+                    FROM ZERO
+                </span>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#microempresas" class="text-sm font-semibold text-gray-600 hover:text-brand-primary transition">Para Microempresas</a>
+                <a href="#desarrolladores" class="text-sm font-semibold text-gray-600 hover:text-brand-primary transition">Para Desarrolladores</a>
+                <button class="bg-brand-primary hover:bg-brand-light text-white px-5 py-2 rounded-full text-sm font-bold transition-all shadow-md">
+                    Contáctanos
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="relative bg-brand-dark overflow-hidden py-24 md:py-32">
+        <div class="relative z-10 max-w-5xl mx-auto px-6 flex flex-col items-center text-center">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-headers text-white mb-6 uppercase leading-tight">
+                Cerrando la brecha digital para <span class="text-brand-light">emprendedores peruanos</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-3xl font-sans">
+                Nuestra organización nace con el propósito de facilitar la transición hacia el entorno del marketing digital. Conectamos eficientemente a desarrolladores independientes con negocios que requieren crear o mejorar su infraestructura web.
+            </p>
+            <button class="bg-brand-light hover:bg-brand-primary text-white font-headers font-bold px-8 py-4 rounded-full transition-all shadow-lg hover:scale-105 uppercase tracking-wide">
+                Empieza Ya
+            </button>
+        </div>
+    </section>
+
+    <section id="microempresas" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-brand-primary font-headers tracking-wide uppercase text-sm mb-2">Soluciones Empresariales</h2>
+                <h3 class="text-3xl md:text-4xl font-headers text-gray-900 uppercase">Para Microempresas</h3>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center border-b border-gray-200 pb-16">
+                <div class="space-y-4">
+                    <h4 class="text-2xl font-headers text-brand-dark uppercase">Autonomía con Inteligencia Artificial</h4>
+                    <p class="text-gray-600 text-lg leading-relaxed">
+                        Implementamos herramientas potenciadas por IA diseñadas para brindar autonomía a los empresarios en la gestión de su ecosistema digital, sin depender de terceros para tareas básicas.
+                    </p>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Dashboard IA" class="rounded-lg shadow-xl" />
+                </div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center pt-16">
+                <div class="order-2 md:order-1">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Hosting y Web" class="rounded-lg shadow-xl" />
+                </div>
+                <div class="space-y-4 order-1 md:order-2">
+                    <h4 class="text-2xl font-headers text-brand-dark uppercase">Servicios Integrales Web</h4>
+                    <p class="text-gray-600 text-lg leading-relaxed">
+                        Además de conectar talento, ofrecemos servicios integrales de hosting y dominios para garantizar que tu presencia en línea sea rápida, segura y estable.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="desarrolladores" class="py-20 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-brand-primary font-headers tracking-wide uppercase text-sm mb-2">Comunidad Tech</h2>
+                <h3 class="text-3xl md:text-4xl font-headers text-gray-900 uppercase">Para Desarrolladores</h3>
+            </div>
+            <div class="bg-white p-10 rounded-2xl shadow-sm border border-gray-100 flex flex-col md:flex-row gap-10 items-center">
+                <div class="flex-1 space-y-4">
+                    <h4 class="text-2xl font-headers text-brand-dark uppercase">El puente de oportunidad laboral</h4>
+                    <p class="text-gray-600 text-lg leading-relaxed">
+                        Nuestra visión es ser el principal puente de oportunidad laboral para estudiantes de tecnología. Funciona como un ecosistema colaborativo donde puedes aplicar tus conocimientos en la digitalización de emprendimientos reales en Perú.
+                    </p>
+                </div>
+                <div class="flex-1">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Networking" class="rounded-lg shadow-md" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-brand-dark pt-12 pb-8 px-6 text-center">
+        <h2 class="font-headers font-bold text-2xl text-white tracking-tight mb-6">FROM ZERO</h2>
+        <p class="text-gray-400 text-sm font-sans">
+            © 2026. Nuestra misión es democratizar el acceso a la tecnología.
+        </p>
+    </footer>
+
+</body>
+</html>
